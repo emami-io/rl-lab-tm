@@ -1,4 +1,31 @@
-[tool.ruff]
-include = ["pyproject.toml", "trackmania_rl/*.py", "scripts/*.py", "config_files/*.py"]
-line-length = 140
+[project]
+name = "trackmania_rl"
+version = "0.1.0"
+description = "Trackmania Reinforcement Learning"
+authors = [{ name = "Trackmania RL Team" }]
+readme = "README.md"
 
+requires-python = ">=3.11"
+
+dependencies = [
+    "opencv-python",
+    "readwritememory",
+    "tminterface",
+    "torchrl",
+    "pygbx",
+    "art",
+    "python-libxdo; sys_platform == 'linux'",
+    "torch",
+    "torchvision",
+    "pywin32; sys_platform == 'win32'"
+]
+
+
+[tool.ruff]
+include = [
+    "pyproject.toml",
+    "trackmania_rl/*.py",
+    "scripts/*.py",
+    "config_files/*.py",
+]
+line-length = 140

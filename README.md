@@ -1,20 +1,14 @@
 <div align="center">
 
-  <h3>Linesight</h3>
-
-  Trackmania AI
+  <h3>TrackMania Nations Forever Reinforcement Learning</h3>
+  Experimental ML for Trackmania
   <br>
-  <strong>[Linesight documentation][doc-link]</strong>
-  <br>
-  <br>
-  [![Discord][doc-badge]][doc-link]
-  [![Discord][discord-badge]][discord-link]
-
+  this code base is a fork of the original [Linesight](https://github.com/Linesight-RL/linesight)
 </div>
 
 ## Linesight
 
-Linesight is a reinforcement learning project seeking to push what can be done with AI in Trackmania as far as possible. 
+Linesight is a reinforcement learning project seeking to push what can be done with AI in Trackmania as far as possible.
 
 ## Trackmania
 
@@ -24,14 +18,13 @@ Trackmania is a racing game that sacrifices some of the realism of sim-racers fo
 
 Our work, combined with the efforts of [donadigo](https://github.com/donadigo) and [Kim](https://github.com/koyaanis) of the [Trackmania Interface team](https://donadigo.com/tminterface/) allow interfacing to [Trackmania Nations Forever](https://en.wikipedia.org/wiki/TrackMania#TrackMania_United). Allowing you to programmatically send inputs, get car states, get screenshots, etc... This part of our codebase could be useful to other RL projects.
 
-## Results
+## Wha's new in this fork?
+This fork is a continuation of the original Linesight project, with the goal of making it more accessible and easier to use. The main changes include:
 
-To our knowledge, Linesight is by far the most advanced AI in Trackmania. It was the first to demonstrate human-level driving around May 2023, with [Wirtual playing against it](https://www.youtube.com/watch?v=wjHW3ai47Og) in June. In May 2024, Linesight was the first to [showcase beating world records on official campaign tracks](https://www.youtube.com/watch?v=cUojVsCJ51I).
+### Features
+- [X] Move to modern package manager [UV](https://uv.dev/)
 
-Now that the project is open-source, can you help make it even stronger?
-
-[doc-link]: https://linesight-rl.github.io/linesight/build/html/
-[discord-link]:       https://discord.gg/PvWYGkGKqd
-
-[doc-badge]: https://img.shields.io/badge/Documentation-blue?style=for-the-badge&logoSize=small&logo=readthedocs
-[discord-badge]: https://img.shields.io/discord/847108820479770686?style=for-the-badge&logo=discord&logoSize=auto&label=Discord
+### Todo
+- [ ] Add dockerfile for easy setup
+- [ ] Support for multiple Trackmania maps
+- [ ] Support for training on Apple Silicon
