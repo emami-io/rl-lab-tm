@@ -3,12 +3,14 @@
   <h3>TrackMania Nations Forever Reinforcement Learning</h3>
   Experimental ML for Trackmania
   <br>
-  this code base is a fork of the original [Linesight](https://github.com/Linesight-RL/linesight)
+
 </div>
 
 ## Linesight
 
 Linesight is a reinforcement learning project seeking to push what can be done with AI in Trackmania as far as possible.
+
+[Linesight Source Code](https://github.com/Linesight-RL/linesight)
 
 ## Trackmania
 
@@ -16,15 +18,18 @@ Trackmania is a racing game that sacrifices some of the realism of sim-racers fo
 
 ## Trackmania Interface
 
-Our work, combined with the efforts of [donadigo](https://github.com/donadigo) and [Kim](https://github.com/koyaanis) of the [Trackmania Interface team](https://donadigo.com/tminterface/) allow interfacing to [Trackmania Nations Forever](https://en.wikipedia.org/wiki/TrackMania#TrackMania_United). Allowing you to programmatically send inputs, get car states, get screenshots, etc... This part of our codebase could be useful to other RL projects.
+Linesight, combined with the efforts of [donadigo](https://github.com/donadigo) and [Kim](https://github.com/koyaanis) of the [Trackmania Interface team](https://donadigo.com/tminterface/) allow interfacing to [Trackmania Nations Forever](https://en.wikipedia.org/wiki/TrackMania#TrackMania_United). Allowing you to programmatically send inputs, get car states, get screenshots, etc... This part of our codebase could be useful to other RL projects.
 
-## Wha's new in this fork?
+## What's new in this fork?
+
 This fork is a continuation of the original Linesight project, with the goal of making it more accessible and easier to use. The main changes include:
 
 ### Features
-- [X] Move to modern package manager [UV](https://uv.dev/)
+
+- [x] Move to modern package manager [UV](https://uv.dev/)
 
 ### Todo
+
 - [ ] Add dockerfile for easy setup
 - [ ] Support for multiple Trackmania maps
 - [ ] Support for training on Apple Silicon
