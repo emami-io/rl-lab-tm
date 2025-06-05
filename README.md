@@ -26,10 +26,12 @@ This fork is a continuation of the original Linesight project, with the goal of 
 
 ### Features
 
-- [x] Move to modern package manager [UV](https://uv.dev/)
 
-### Todo
-
+### Roadmap
+- [ ] Move to modern package manager [UV](https://uv.dev/)
+- [ ] Seperate the Game interface from the RL code
+- [ ] Containerize the project for easy setup
+- [ ] Enable training on multiple Game Servers
 - [ ] Add dockerfile for easy setup
 - [ ] Support for multiple Trackmania maps
 - [ ] Support for training on Apple Silicon

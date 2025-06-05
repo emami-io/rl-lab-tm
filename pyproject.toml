@@ -2,10 +2,17 @@
 name = "trackmania_rl"
 version = "0.1.0"
 description = "Trackmania Reinforcement Learning"
-authors = [{ name = "Trackmania RL Team" }]
+authors = [
+    { name = "Linesight" },
+    { name = "Emami-IO", email = "info@emami.io" },
+]
 readme = "README.md"
 
-requires-python = ">=3.11"
+requires-python = ">=3.10, <3.12"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
 
 dependencies = [
     "opencv-python",
@@ -17,9 +24,20 @@ dependencies = [
     "python-libxdo; sys_platform == 'linux'",
     "torch",
     "torchvision",
-    "pywin32; sys_platform == 'win32'"
+    "pywin32; sys_platform == 'win32'",
+    "rich>=14.0.0",
+    "prompt-toolkit>=3.0.51",
 ]
 
+[project.optional-dependencies]
+doc = ["sphinx", "sphinx_rtd_theme", "sphinxcontrib.youtube"]
+
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["trackmania_rl", "scripts", "game_interface"]
 
 [tool.ruff]
 include = [
@@ -29,3 +47,7 @@ include = [
     "config_files/*.py",
 ]
 line-length = 140
+
+[project.scripts]
+start = "scripts.start_tui:main"
+train = "scripts.train:main"
